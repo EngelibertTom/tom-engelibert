@@ -5,25 +5,31 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const experiences = [
   {
-    logo: "/images/iut-lens.jpg",
+    logo: "/images/iut.png",
     title: "DUT MMI \u2013 IUT de Lens",
     date: "2020 \u2013 2022",
   },
   {
-    logo: "/images/company-2.jpg",
+    logo: "/images/bonsai.png",
     title: "D\u00e9veloppeur Full Stack",
     date: "Mai 2022",
   },
   {
-    logo: "/images/top-office.jpg",
+    logo: "/images/top-office.png",
     title: "D\u00e9veloppeur Full Stack",
     date: "2023",
   },
   {
-    logo: "/images/groupe-all.jpg",
+    logo: "/images/groupe-all.png",
     title: "D\u00e9veloppeur Full Stack",
     date: "2023\u20132025",
   },
+]
+
+const certifications = [
+  {
+    img: ""
+  }
 ]
 
 export function AboutSection() {
@@ -49,7 +55,7 @@ export function AboutSection() {
         className={`transition-all duration-700 delay-200 ease-out ${description.isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}
       >
         <p className="mt-6 max-w-4xl leading-relaxed text-foreground">
-          {"lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"}
+          {"My name is Tom Engélibert, and I'm a full-stack web developer. Passionate about creating high-performance and intuitive applications, I have a strong foundation in React, Next.js, TypeScript, Tailwind CSS, and backend development with Symfony and Laravel. Curious and motivated, I enjoy learning new technologies and tackling technical challenges."}
         </p>
       </div>
 
