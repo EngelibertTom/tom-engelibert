@@ -21,7 +21,7 @@ const projects = [
     description:
       "A web application that simulates tree planting in urban environments, raising user awareness of the challenges and issues of climate change. This tool allows users to estimate the real-time impact of tree planting on the temperature of identified urban heat islands.",
     tags: ["React", "Next.js", "Mapbox", "OpenWeather API"],
-    github: "#",
+    github: "https://github.com/EngelibertTom/competition",
     live: "https://competition-vert.vercel.app/",
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     description:
       "An immersive web application that uses weather data to generate an audiovisual experience. Discover how geographic and meteorological data are transformed into an immersive symphony.",
     tags: ["React", "Next.js", "Tone.js", "Mapbox", "OpenWeather API"],
-    github: "#",
+    github: "https://github.com/EngelibertTom/epreuve-rentree",
     live: "https://epreuve-rentree-d6dp.vercel.app/map",
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     description:
       "This website aims to raise public awareness of the challenges posed by AI in the military. It offers an immersive and interactive experience, allowing users to explore the implications of AI in armed conflicts.",
     tags: ["Next.js", "Tailwind"],
-    github: "#",
+    github: "https://github.com/EngelibertTom/out-of-school",
     live: "https://out-of-school-nu.vercel.app/",
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     description:
       "Interactive recipe website using the Gastronogeek API and Next.js. This site allowed me to showcase my design skills by creating an attractive and functional interface, integrating animations and page transitions.",
     tags: ["Next.js", "Tailwind CSS", "API Rest"],
-    github: "#",
+    github: "https://github.com/EngelibertTom/gastronogeek",
     live: "https://gastronogeek-lsgy.vercel.app/",
   },
 ]
