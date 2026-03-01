@@ -6,7 +6,7 @@ import './globals.css'
 const albertSans = Albert_Sans({ subsets: ["latin"], variable: "--font-albert" });
 
 export const metadata: Metadata = {
-  title: 'Tom Engelibert - React Developer',
+  title: 'Tom Engelibert - Full Stack Developer',
   description: 'Portfolio of Tom Engelibert, a React/Symfony developer available for opportunities.',
   icons: {
     icon: [
