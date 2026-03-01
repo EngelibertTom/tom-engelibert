@@ -7,6 +7,7 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 const filters = [
   "All",
   "React",
+  "React Native",
   "Symfony",
   "Next.js",
   "TypeScript",
@@ -47,6 +48,22 @@ const projects = [
     tags: ["Next.js", "Tailwind CSS", "API Rest"],
     github: "https://github.com/EngelibertTom/gastronogeek",
     live: "https://gastronogeek-lsgy.vercel.app/",
+  },
+  {
+    title: "Marcel & CO",
+    description:
+      "This mobile application, developed during a hackathon in 2023, scans products and assesses their environmental impact using a moral compass. This project provided an opportunity to test the swipe functionality with React Native. to test the functionality of this framework. It uses an API and lists the retrieved data.",
+    tags: ["React Native", "API Rest"],
+    github: "https://github.com/EngelibertTom/Marcel-CO",
+    live: "",
+  },
+  {
+    title: "Initiation React Native",
+    description:
+      "This React Native application was designed to test the functionality of this framework. It uses an API and lists the retrieved data.",
+    tags: ["React Native", "API Rest"],
+    github: "https://github.com/EngelibertTom/https://github.com/EngelibertTom/acnh",
+    live: "",
   },
 ]
 
@@ -173,7 +190,7 @@ export function ProjectsSection() {
 
       {filteredProjects.length === 0 && (
         <p className="mt-10 text-center text-muted-foreground">
-          Aucun projet avec ce filtre.
+          No projects found with this filter.
         </p>
       )}
     </section>
