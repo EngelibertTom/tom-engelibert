@@ -7,11 +7,11 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 const filters = [
   "All",
   "React",
+  "Symfony",
   "Next.js",
   "TypeScript",
   "SCSS",
   "Tailwind",
-  "Firebase",
   "Figma",
 ]
 
