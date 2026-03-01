@@ -27,14 +27,14 @@ export function ContactSection() {
         >
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-foreground">Nom</label>
+              <label className="text-sm font-medium text-foreground">Name</label>
               <input
                 type="text"
                 className="rounded-[12px] border border-[#D9D9D9] bg-background px-4 py-3 text-sm text-foreground focus:border-[#40C529] focus:outline-none focus:ring-1 focus:ring-[#40C529]"
               />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-foreground">{"\u0050r\u00e9nom"}</label>
+              <label className="text-sm font-medium text-foreground">First name</label>
               <input
                 type="text"
                 className="rounded-[12px] border border-[#D9D9D9] bg-background px-4 py-3 text-sm text-foreground focus:border-[#40C529] focus:outline-none focus:ring-1 focus:ring-[#40C529]"
@@ -51,7 +51,7 @@ export function ContactSection() {
               />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-medium text-foreground">{"\u0054\u00e9l\u00e9phone"}</label>
+              <label className="text-sm font-medium text-foreground">Phone</label>
               <input
                 type="tel"
                 className="rounded-[12px] border border-[#D9D9D9] bg-background px-4 py-3 text-sm text-foreground focus:border-[#40C529] focus:outline-none focus:ring-1 focus:ring-[#40C529]"
@@ -60,7 +60,7 @@ export function ContactSection() {
           </div>
 
           <div className="flex flex-col gap-1.5">
-            <label className="text-sm font-medium text-foreground">Sujet du message</label>
+            <label className="text-sm font-medium text-foreground">Subject</label>
             <input
               type="text"
               className="rounded-[12px] border border-[#D9D9D9] bg-background px-4 py-3 text-sm text-foreground focus:border-[#40C529] focus:outline-none focus:ring-1 focus:ring-[#40C529]"
@@ -80,7 +80,7 @@ export function ContactSection() {
             className="inline-flex w-fit items-center gap-2 rounded-[16px] bg-[#40C529] px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#38b023]"
           >
             <Send className="h-4 w-4" />
-            Envoyer
+            Send
           </button>
         </form>
 
