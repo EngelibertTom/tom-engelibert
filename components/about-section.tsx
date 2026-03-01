@@ -28,8 +28,14 @@ const experiences = [
 
 const certifications = [
   {
-    img: ""
-  }
+    title: "DUT Métiers de l'internet et du multimédia",
+    pdf: "/files/att-2022.pdf",
+  },
+  {
+    title: "Licence pro - Création web",
+    pdf: "/files/att-2023.pdf",
+  },
+
 ]
 
 export function AboutSection() {
@@ -99,38 +105,31 @@ export function AboutSection() {
         ref={certCards.ref}
         className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {[1, 2, 3].map((i) => (
-          <div
-            key={i}
-            className={`flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-[#D9D9D9] bg-background transition-all duration-500 ease-out ${certCards.isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+        {certifications.map((cert, i) => (
+          <a
+            key={cert.title}
+            href={cert.pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group relative flex aspect-[4/3] overflow-hidden rounded-2xl border border-[#D9D9D9] bg-background transition-all duration-500 ease-out hover:border-foreground/30 hover:shadow-lg ${certCards.isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
             style={{
-              transitionDelay: certCards.isVisible
-                ? `${(i - 1) * 150}ms`
-                : "0ms",
+              transitionDelay: certCards.isVisible ? `${i * 150}ms` : "0ms",
             }}
+            title={`Voir ${cert.title}`}
           >
-            <svg
-              viewBox="0 0 200 150"
-              className="h-full w-full text-[#D9D9D9]"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="0.5"
-            >
-              <rect x="10" y="10" width="180" height="130" rx="8" fill="none" />
-              <line x1="10" y1="10" x2="190" y2="140" />
-              <line x1="190" y1="10" x2="10" y2="140" />
-              <text
-                x="100"
-                y="25"
-                textAnchor="middle"
-                fontSize="5"
-                fill="currentColor"
-                stroke="none"
-              >
-                {"Certification placeholder"}
-              </text>
-            </svg>
-          </div>
+            <iframe
+              src={`${cert.pdf}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+              title={cert.title}
+              className="h-full w-full"
+              style={{ pointerEvents: "none" }}
+            />
+
+            <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors duration-300 group-hover:bg-black/20">
+              <span className="rounded-[16px] bg-background/90 px-4 py-2 text-sm font-medium text-foreground opacity-0 shadow transition-opacity duration-300 group-hover:opacity-100">
+                Ouvrir le PDF
+              </span>
+            </div>
+          </a>
         ))}
       </div>
     </section>
