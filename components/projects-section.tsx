@@ -163,13 +163,20 @@ export function ProjectsSection() {
                 <GithubIcon className="h-4 w-4" />
                 Github
               </a>
-              <a
-                href={project.live}
-                className="inline-flex items-center gap-2 rounded-[16px] border border-[#D9D9D9] bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-[#40C529]/50"
-              >
-                <ExternalLink className="h-4 w-4" />
-                Live
-              </a>
+              {project.live ? (
+  
+    <a href={project.live}
+    className="inline-flex items-center gap-2 rounded-[16px] border border-[#D9D9D9] bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-[#40C529]/50"
+  >
+    <ExternalLink className="h-4 w-4" />
+    Live
+  </a>
+) : (
+  <span className="inline-flex items-center gap-2 rounded-[16px] border border-[#D9D9D9] bg-muted px-4 py-2 text-sm font-medium text-muted-foreground cursor-not-allowed opacity-50">
+    <ExternalLink className="h-4 w-4" />
+    Live
+  </span>
+)}
             </div>
           </div>
         ))}
