@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     z-index: 9999;
     pointer-events: none;
@@ -17,4 +17,12 @@
   height: 100%;
   transform-origin: top center;
   transform: scaleY(0);
+}
+
+@media (min-width: 600px) {
+    .overlay {
+        
+        grid-template-columns: repeat(4, 1fr);
+    
+    }
 }

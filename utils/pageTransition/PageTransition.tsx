@@ -15,7 +15,7 @@ const PageTransition = ({
   onCovered,
 }: PageTransitionProps) => {
   const overlayRef = useRef<HTMLDivElement | null>(null)
-  const COLUMNS = 8
+  const COLUMNS = 4;
   const ROWS = 1
 
   useEffect(() => {
