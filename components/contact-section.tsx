@@ -56,7 +56,7 @@ export function ContactSection() {
                 const message =
                   typeof data?.message === "string"
                     ? data.message
-                    : "Une erreur est survenue. Réessaie dans un instant."
+                    : "Something went wrong. Please try again in a moment."
                 setErrorMessage(message)
                 setStatus("error")
                 return
@@ -65,7 +65,7 @@ export function ContactSection() {
               formElement.reset()
               setStatus("success")
             } catch (error) {
-              setErrorMessage("Impossible d'envoyer le message pour le moment.")
+              setErrorMessage("Unable to send the message right now.")
               setStatus("error")
             }
             }}
@@ -141,12 +141,12 @@ export function ContactSection() {
 
           {status === "success" ? (
             <p className="text-sm text-[#40C529]" role="status" aria-live="polite">
-              Merci ! Votre message a bien été envoyé.
+              Thanks! Your message has been sent.
             </p>
           ) : null}
             {status === "error" ? (
               <p className="text-sm text-red-500" role="status" aria-live="polite">
-                {errorMessage ?? "Une erreur est survenue. Réessaie plus tard."}
+                {errorMessage ?? "Something went wrong. Please try again later."}
               </p>
             ) : null}
           </form>
