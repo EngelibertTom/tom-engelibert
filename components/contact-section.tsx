@@ -165,7 +165,7 @@ export function ContactSection() {
             <span className="text-sm text-foreground">tom.engelibert@gmail.com</span>
           </div>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/tom-engelibert-6247b0229"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 transition-opacity hover:opacity-70"
