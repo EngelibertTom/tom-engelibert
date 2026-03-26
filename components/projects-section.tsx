@@ -42,6 +42,14 @@ const projects = [
     live: "",
   },
   {
+    title: "Petflix",
+    description:
+      "Petflix is a web application designed to manage an animal shelter, including adoptions and associated videos for follow-up and communication purposes. The interface is built as a simple, ergonomic dashboard to streamline day-to-day management.",
+    tags: ["PHP", "MySQL"],
+    github: "https://github.com/EngelibertTom/Petflix",
+    live: "",
+  },
+  {
     title: "IA et Armement",
     description:
       "This website aims to raise public awareness of the challenges posed by AI in the military. It offers an immersive and interactive experience, allowing users to explore the implications of AI in armed conflicts.",
