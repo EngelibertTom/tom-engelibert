@@ -10,6 +10,7 @@ const filters = [
   "React Native",
   "Next.js",
   "Vue.js",
+  "PHP",
   "Symfony",
   "SCSS",
   "Tailwind",
