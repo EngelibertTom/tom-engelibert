@@ -19,6 +19,14 @@ const filters = [
 
 const projects = [
   {
+    title: "Randollier",
+    description:
+      "This is an ongoing mini e-commerce project built in Vue.js. I’m developing it as a hands-on exercise to improve my skills with Vue 3, Composition API, TypeScript, and modern front-end best practices.",
+    tags: ["Vue.js", "Pinia", "Symfony", "PostgreSQL", "EasyAdmin", "JWT Authentification"],
+    github: "https://github.com/EngelibertTom/Randollier",
+    live: "",
+  },
+  {
     title: "Simularbre",
     description:
       "A web application that simulates tree planting in urban environments, raising user awareness of the challenges and issues of climate change. This tool allows users to estimate the real-time impact of tree planting on the temperature of identified urban heat islands.",
@@ -33,14 +41,6 @@ const projects = [
     tags: ["React", "Next.js", "Tone.js", "Mapbox", "OpenWeather API"],
     github: "https://github.com/EngelibertTom/epreuve-rentree",
     live: "https://epreuve-rentree-d6dp.vercel.app/map",
-  },
-  {
-    title: "Randollier",
-    description:
-      "This is an ongoing mini e-commerce project built in Vue.js. I’m developing it as a hands-on exercise to improve my skills with Vue 3, Composition API, TypeScript, and modern front-end best practices.",
-    tags: ["Vue.js", "Symfony"],
-    github: "https://github.com/EngelibertTom/Randollier",
-    live: "",
   },
   {
     title: "Petflix",
